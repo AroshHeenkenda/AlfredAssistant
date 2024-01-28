@@ -6,3 +6,9 @@ A desktop virtual assisant that will:
 - Tell the date and time (your and other locations)
 - Play and recommend songs
 - Do online searches (Youtube, Google, etc.)
+
+
+# Research
+Links to any research undertaken.
+
+- https://realpython.com/python-speech-recognition/
