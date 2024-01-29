@@ -34,3 +34,4 @@ A desktop virtual assistant that will:
 Links to any research undertaken.
 
 - https://realpython.com/python-speech-recognition/
+- https://medium.com/analytics-vidhya/how-to-build-your-first-desktop-application-in-python-7568c7d74311
