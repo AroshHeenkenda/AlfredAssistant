@@ -35,3 +35,7 @@ Links to any research undertaken.
 
 - https://realpython.com/python-speech-recognition/
 - https://medium.com/analytics-vidhya/how-to-build-your-first-desktop-application-in-python-7568c7d74311
+
+Weather API:
+- https://pypi.org/project/python-weather/
+- https://www.meteosource.com/blog/weather-api-for-python
