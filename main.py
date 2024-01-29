@@ -22,13 +22,20 @@ def test():
 
         try:
             response["transcription"] = r.recognize_google(audio)
+
+        #API was unreachable or unresponsive
         except sr.RequestError:
-            # API was unreachable or unresponsive
             response["success"] = False
             response["error"] = "API unavailable"
+        
+        #Speech was unintelligble
         except sr.UnknownValueError:
-            # speech was unintelligible
             response["error"] = "Unable to recognize speech"
+        
+        #Timeout user took too long to speak
+        except sr.WaitTimeoutError:
+            response["error"] = "Timeout, user took too long to speak"
+
         
         print(response)
 
