@@ -40,3 +40,4 @@ Weather API:
 - https://pypi.org/project/python-weather/
 - https://www.meteosource.com/blog/weather-api-for-python
 - https://www.weatherapi.com/ (chosen)
+    - https://github.com/weatherapicom/python
