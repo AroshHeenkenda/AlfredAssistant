@@ -41,3 +41,6 @@ Weather API:
 - https://www.meteosource.com/blog/weather-api-for-python
 - https://www.weatherapi.com/ (chosen)
     - https://github.com/weatherapicom/python
+
+Fuzzy String Matching:
+- https://www.datacamp.com/tutorial/fuzzy-string-python
