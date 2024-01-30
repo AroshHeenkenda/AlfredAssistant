@@ -12,18 +12,21 @@ def test():
     mic = sr.Microphone() #Hard coded the working microphone
 
     with mic as source:
+
+        print("Listening...")
         r.adjust_for_ambient_noise(source, duration=0.5)
         audio = r.listen(source, timeout=TIMEOUT)
 
-            # set up the response object
+        # Set up the response object
         response = {
         "success": True,
         "error": None,
-        "transcription": None
+        "words": None
         }
 
+        print("Recognising...")
         try:
-            response["transcription"] = r.recognize_google(audio)
+            response["words"] = r.recognize_google(audio)
 
         #API was unreachable or unresponsive
         except sr.RequestError:
@@ -40,6 +43,14 @@ def test():
 
         
         print(response)
+
+        print(response["words"].upper())
+        print(Phrase.WEATHER.value.upper())
+
+        if response["words"].upper() == Phrase.WEATHER.value.upper():
+            Weather().current_weather()
+
+
 
 
 
