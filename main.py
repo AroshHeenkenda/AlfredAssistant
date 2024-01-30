@@ -1,5 +1,6 @@
 import speech_recognition as sr
 from func.weather import Weather
+from func.phrases import Phrase
 
 #Give a timeout to define how long we should wait for audio
 TIMEOUT=10
